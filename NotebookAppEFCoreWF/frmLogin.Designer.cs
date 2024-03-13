@@ -40,7 +40,6 @@
             button1 = new Button();
             linkLabel1 = new LinkLabel();
             lblExit = new Label();
-            flowLayoutPanel1 = new FlowLayoutPanel();
             SuspendLayout();
             // 
             // BottomToolStripPanel
@@ -111,6 +110,7 @@
             btnLogin.TabIndex = 3;
             btnLogin.Text = "LOGIN";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // button1
             // 
@@ -141,20 +141,14 @@
             // lblExit
             // 
             lblExit.AutoSize = true;
-            lblExit.BackColor = Color.Silver;
+            lblExit.BackColor = Color.Transparent;
             lblExit.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblExit.ForeColor = Color.FromArgb(128, 255, 128);
             lblExit.Location = new Point(647, 9);
             lblExit.Name = "lblExit";
             lblExit.Size = new Size(24, 28);
             lblExit.TabIndex = 6;
             lblExit.Text = "X";
-            // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.Location = new Point(96, 146);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(8, 8);
-            flowLayoutPanel1.TabIndex = 7;
             // 
             // frmLogin
             // 
@@ -162,7 +156,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(683, 553);
-            Controls.Add(flowLayoutPanel1);
             Controls.Add(lblExit);
             Controls.Add(linkLabel1);
             Controls.Add(button1);
@@ -189,6 +182,5 @@
         private Button button1;
         private LinkLabel linkLabel1;
         private Label lblExit;
-        private FlowLayoutPanel flowLayoutPanel1;
     }
 }
