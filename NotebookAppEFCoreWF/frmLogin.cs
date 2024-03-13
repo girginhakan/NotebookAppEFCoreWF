@@ -19,7 +19,7 @@ namespace NotebookAppEFCoreWF
             var passwordCheck= db.Users.Where(u=>u.Password == txtPassword.Text);
             if (userNameCheck!=null&&passwordCheck!=null)
             {
-                
+                   
             }
         }
     }
